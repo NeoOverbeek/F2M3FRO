@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%; /* 1 rem is nu 10 */
+}
+
+body{
+    font-size: 2rem;
+    background: #EFFFFD;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+}
+
+.card{
+    width: 40rem;
+    height: 40rem;
+    border-radius: 5rem;
+    box-shadow: 0 1rem 2rem 0 rgb(0, 0, 0, 0.2);
+    flex-shrink: 0;
+}
+
+.card--buy{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.card--buy img{
+    height: 70%;
+    width: 100%;
+}
+
+.card--buy p{
+    height: 20%;
+    font-size: 75%;
+}
+
+.card--slider{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 4rem;
+}
+
+.card--slider > h2{
+    font-size: 400%;
+}
+
+.card--slider > input{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    border-radius: 5rem;
+    height: 1.8rem;
+    background: linear-gradient(to right, #feac5e, #c779d0, #4bc0c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.card--slider > input::-webkit-slider-thumb { /*Dit is voor chrome de range slider knop*/
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.card--slider > input::-moz-range-thumb { /*Dit is voor Mozilla de slider knop*/
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.card--stopwatch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 4rem;
+}
+
+.timerTekst{
+    font-size: 200%;
+}
+
+.button{
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    color: white;
+}
+
+.button--start{
+    background-color: #B4CFB0;
+}
+
+.button--stop{
+    background-color: #94B49F;
+}
+
+.button--reset{
+    background-color: #789395;
+}

@@ -1,0 +1,56 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    font-size:1rem;
+}
+
+/* 1 rem is altijd het lettertype dat de bezoeker heeft gekozen in de browser settings */
+
+article{
+    width: 35vw;
+    border: 5px dotted blue;
+}
+
+h1{
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    border: 5px dotted red;
+}
+
+/* 2 rem houd in dat het 2 keer zo groot word als de aangegeven lettertype van de browser settings*/
+
+p{
+    margin-bottom: 2.5rem;
+    border: 5px dotted green;
+
+}
+
+button{
+    outline:none;
+    border:none;
+    background: green;
+    color:white;
+    font-family: sans-serif;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 5px dotted yellow;
+    width:100%;
+}
+
+@media screen and (max-width: 62.5rem){
+    body{
+        background: red;
+    }
+    article{
+        width: 80vw;
+    }
+}
